@@ -97,5 +97,25 @@
       <a href="#contact" class="button">Get in touch</a>
     </div>
   </section>
+
+  <script src="https://cdn.apple-cloudkit.com/ck/2/cloudkit.js"></script>
+
+<script>
+  CloudKit.configure({
+    containers: [{
+      containerIdentifier: "iCloud.com.turaydigital.StoreManagement",
+      apiTokenAuth: {
+        apiToken: "f9950a7d931cd716efd20ed3d53a3c45807202d59a526b827066cf1e6b62c82b"
+      },
+      environment: "development"
+    }]
+  });
+
+  const container = CloudKit.getDefaultContainer();
+  const publicDB = container.publicCloudDatabase;
+
+  console.log("CloudKit connected:", publicDB);
+</script>
+
 </body>
 </html>
