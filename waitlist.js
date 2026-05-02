@@ -24,7 +24,11 @@ form.addEventListener("submit", async (event) => {
     const data = await response.json();
 
     if (!response.ok) {
-    throw new Error(data.error || "Something went wrong.");
+    if (response.status === 409) {
+        throw new Error("You’re already on the waitlist with this email.");
+    }
+
+    throw new Error(data.error || "Something went wrong. Please try again.");
     }
 
     statusText.textContent = "Thank you — you're on the waitlist!";
