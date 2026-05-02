@@ -21,13 +21,15 @@ form.addEventListener("submit", async (event) => {
       body: JSON.stringify(payload)
     });
 
+    const data = await response.json();
+
     if (!response.ok) {
-      throw new Error("Something went wrong.");
+    throw new Error(data.error || "Something went wrong.");
     }
 
     statusText.textContent = "Thank you — you're on the waitlist!";
     form.reset();
   } catch (error) {
-    statusText.textContent = "Could not submit. Please try again.";
+    statusText.textContent = error.message;
   }
 });
