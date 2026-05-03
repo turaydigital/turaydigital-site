@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Turay Digital</title>
+
+  <link rel="stylesheet" href="inc/css/style.css" />
 </head>
+
 <body>
-    
+  <header class="site-header">
+    <a href="index.html" class="logo">Turay Digital</a>
+
+    <button class="menu-button" id="menuButton" aria-label="Open menu">
+      ☰
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="services.html">Services</a>
+      <a href="apps.html">Apps</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-content">
+        <div class="tag">Contact Turay Digital</div>
+
+        <h1>Join the waitlist.</h1>
+
+        <p>
+          Tell us what you’re interested in and we’ll keep you updated as our
+          digital tools and apps launch.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-card">
+        <div class="tag">Join the waitlist</div>
+        <h2>Be first to hear when we launch.</h2>
+
+        <form id="waitlistForm">
+          <input id="name" type="text" placeholder="Your name" />
+          <input id="email" type="email" placeholder="Your email" required />
+          <textarea id="message" placeholder="What are you interested in?"></textarea>
+
+          <button type="submit">Join waitlist</button>
+          <p id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="inc/js/nav.js"></script>
+  <script src="inc/js/waitlist.js?v=2"></script>
 </body>
 </html>
