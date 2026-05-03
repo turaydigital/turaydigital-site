@@ -9,12 +9,15 @@ if (menuButton && siteNav) {
   });
 }
 
-const currentPage = window.location.pathname.split("/").pop() || "index.html";
+const currentPath = window.location.pathname.replace("/", "").replace(".html", "") || "index";
 
 navLinks.forEach((link) => {
-  const linkPage = link.getAttribute("href");
+  const linkPath = link
+    .getAttribute("href")
+    .replace(".html", "")
+    .replace("/", "");
 
-  if (linkPage === currentPage) {
+  if (linkPath === currentPath) {
     link.classList.add("active");
   }
 });
