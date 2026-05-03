@@ -9,13 +9,17 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo">Turay Digital</div>
+  <header class="site-header">
+    <a href="index.html" class="logo">Turay Digital</a>
 
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#apps">Apps</a>
-      <a href="#contact">Contact</a>
+    <button class="menu-button" id="menuButton" aria-label="Open menu">
+      ☰
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="pages/services.html">Services</a>
+      <a href="pages/apps.html">Apps</a>
+      <a href="pages/contact.html">Contact</a>
     </nav>
   </header>
 
@@ -50,6 +54,7 @@
   </div>
 </section>
 
+<script src="inc/js/nav.js"></script>
 <script src="inc/js/waitlist.js"></script>
 
 </body>

@@ -115,3 +115,59 @@ button {
   font-size: 16px;
   margin: 0;
 }
+
+/*  */
+.site-header {
+  padding: 24px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.site-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.site-nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.menu-button {
+  display: none;
+  background: transparent;
+  color: white;
+  border: 0;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .menu-button {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 76px;
+    left: 8%;
+    right: 8%;
+    background: #111827;
+    padding: 20px;
+    border-radius: 18px;
+    flex-direction: column;
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+}
