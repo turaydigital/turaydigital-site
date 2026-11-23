@@ -1,2 +1,31 @@
+# --------------------------------------------
+# Turay Digital Website
+# Git Ignore Configuration
+# --------------------------------------------
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Local backups
+legacy-backup/
+
+# Nested legacy website directory
+turaydigital-site/
+
+# Temporary notes
 *.txt
-# notes.txt

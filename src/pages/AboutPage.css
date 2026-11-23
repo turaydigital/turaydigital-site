@@ -1,0 +1,226 @@
+
+.about-page {
+  width: 100%;
+  color: #0f172a;
+}
+
+.about-container {
+  width: min(100% - 48px, 1160px);
+  margin: 0 auto;
+}
+
+/* Hero */
+
+.about-hero {
+  padding: 120px 0;
+  background: linear-gradient(
+    135deg,
+    #f8fafc 0%,
+    #edf3ff 100%
+  );
+}
+
+.about-hero .about-container {
+  max-width: 900px;
+  text-align: center;
+}
+
+.about-eyebrow {
+  display: inline-block;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.about-hero h1 {
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+  margin: 0 0 28px;
+}
+
+.about-hero h1 span {
+  color: #2563eb;
+}
+
+.about-hero p {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 19px;
+  line-height: 1.8;
+  color: #64748b;
+}
+
+/* Company introduction */
+
+.about-section {
+  padding: 110px 0;
+  background: #ffffff;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-intro h2,
+.about-values-heading h2 {
+  font-size: clamp(30px, 3.5vw, 44px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.about-copy p {
+  font-size: 17px;
+  line-height: 1.85;
+  color: #64748b;
+  margin: 0 0 22px;
+}
+
+/* Mission and vision */
+
+.about-values {
+  padding: 110px 0;
+  background: #f8fafc;
+}
+
+.about-values-heading {
+  max-width: 680px;
+  margin-bottom: 48px;
+}
+
+.about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.about-value-card {
+  padding: 42px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+}
+
+.about-value-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 14px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.about-value-card h3 {
+  font-size: 25px;
+  margin: 0 0 16px;
+}
+
+.about-value-card p {
+  color: #64748b;
+  line-height: 1.8;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Hub call to action */
+
+.about-hub {
+  padding: 90px 0;
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.about-hub-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.about-hub h2 {
+  font-size: clamp(30px, 3.5vw, 44px);
+  line-height: 1.2;
+  margin: 0 0 22px;
+}
+
+.about-hub p {
+  max-width: 600px;
+  color: #94a3b8;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.about-hub-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px 28px;
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.about-hub-button:hover {
+  background: #1d4ed8;
+  color: #ffffff;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .about-container {
+    width: min(100% - 32px, 1160px);
+  }
+
+  .about-hero {
+    padding: 80px 0;
+  }
+
+  .about-hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .about-section,
+  .about-values {
+    padding: 70px 0;
+  }
+
+  .about-intro,
+  .about-values-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-value-card {
+    padding: 30px;
+  }
+
+  .about-hub {
+    padding: 70px 0;
+  }
+
+  .about-hub-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-hub-button {
+    white-space: normal;
+    text-align: center;
+  }
+}
